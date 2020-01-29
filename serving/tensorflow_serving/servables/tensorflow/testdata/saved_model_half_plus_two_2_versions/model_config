@@ -1,6 +1,5 @@
-model_version_policy {
-  specific {
-    versions: 00000123
-    versions: 00000124
+model_config_list: {
+  config: {
+    model_version_policy: {all: {}}
   }
 }
