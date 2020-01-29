@@ -1,0 +1,6 @@
+model_version_policy {
+  specific {
+    versions: 00000123
+    versions: 00000124
+  }
+}
