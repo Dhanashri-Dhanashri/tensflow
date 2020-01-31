@@ -84,7 +84,7 @@ int main(int argc, char** argv) {
                        "If non-empty, read an ascii BatchingParameters "
                        "protobuf from the supplied file name and use the "
                        "contained values instead of the defaults."),
-      tensorflow::Flag("model_config_file", &options.model_config_file,
+      tensorflow::Flag("model_config_file", /models/model/model_config,
                        "If non-empty, read an ascii ModelServerConfig "
                        "protobuf from the supplied file name, and serve the "
                        "models in that file. This config file can be used to "
@@ -92,7 +92,7 @@ int main(int argc, char** argv) {
                        "parameters including non-default version policy. (If "
                        "used, --model_name, --model_base_path are ignored.)"),
       tensorflow::Flag("model_config_file_poll_wait_seconds",
-                       &options.fs_model_config_poll_wait_seconds,
+                       60,
                        "Interval in seconds between each poll of the filesystem"
                        "for model_config_file. If unset or set to zero, "
                        "poll will be done exactly once and not periodically. "
