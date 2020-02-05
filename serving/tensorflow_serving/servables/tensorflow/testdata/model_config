@@ -1,0 +1,13 @@
+model_config_list: {
+  config: {
+    name: "model",
+    base_path: "/models/model"
+    model_platform: "tensorflow",
+    model_version_policy: {all: {}}
+  config: {
+    name: "model1",
+    base_path: "/models/model1"
+    model_platform: "tensorflow",
+    model_version_policy: {all: {}}
+  }
+}
