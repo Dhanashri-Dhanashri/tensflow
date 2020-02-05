@@ -1,13 +1,13 @@
 model_config_list: {
   config: {
-    name: "model",
-    base_path: "/models/model"
+    name: "saved_model_half_plus_two_2_versions",
+    base_path: "/models/saved_model_half_plus_two_2_versions"
     model_platform: "tensorflow",
     model_version_policy: {all: {}}
     },
   config: {
-    name: "model1",
-    base_path: "/models/model1"
+    name: "saved_model_half_plus_two_cpu",
+    base_path: "/models/saved_model_half_plus_two_cpu"
     model_platform: "tensorflow",
     model_version_policy: {all: {}}
   }
